@@ -1,0 +1,47 @@
+body{
+    line-height: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    margin-top:40px;
+}
+
+body::after{
+    content: "";
+  background: url(../images/background.jpg);
+    opacity: 0.5;
+    background-size: cover;
+ background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+}
+
+#word{
+    letter-spacing: 10px;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    
+    font-size: 30px;
+    
+}
+
+h3 {
+    
+    font-size: 25px;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}

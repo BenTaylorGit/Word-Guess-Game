@@ -8,23 +8,33 @@
         <title>Word Guess Game</title>
 
         <link rel="stylesheet" href="assets/css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
 
-        
-       
     </head>
 
     <body>
-            
 
-        <div id="game">
+            <audio id="music">
+                    <source src="assets/music/GoT.mp3" type="audio/ogg">
+            </audio>
+            
+        <header><center><img src="assets/images/logoResize.png" class="logo"><center></header>
+        <div class="container">
             <h1>Game of Thrones Word Guess!</h1>
-            <h1>Press any key to get started</h1>
-            <h1>Wins: <span id="num-wins"></span></h1>
-            <h1><span  id="word"></span></h1>
-            <h1><span id="user-guess"></span></h1>
-            <h1>Number of guess left <span id="num-of-guess"></span></h1>
+            <p>Press any key to get started</p>
+            <h3>Wins: </h3>
+            <span id="num-wins"></span>
+            <h3>Word to Guess</h3>
+            <span  id="word"></span>
+            <h3>Guessed Letters</h3>
+            <span id="user-guess"></span>
+            <br>
+            <h3>Number of Guesses Left </h3>
+            <span id="num-of-guess"></span>
+            <div id="imageDiv"></div>
         </div>
+        
 
 
 

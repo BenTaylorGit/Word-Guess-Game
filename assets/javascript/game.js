@@ -6,14 +6,18 @@ var correctLetters = [];
 var wordToGuess= [];
 var word;
 
+
 var userInputKeyText = document.getElementById("user-guess");
 var userWinsText = document.getElementById("num-wins");
 var wordToGuessText = document.getElementById("word");
 var numOfGuessLeftText = document.getElementById("num-of-guess");
+var changeImage = document.getElementById("imageDiv");
+var playSong = document.getElementById("music");
 
 var wordList = ["arya", "stark", "baratheon", "john", "tyrion", "ned", "targaryen", "greyjoy", "daenarys", "lannister", "snow", "joffrey", "drogo", "stannis", "bronn", "margaery", "tyrell", "melisandre"];
 
 restartGame();
+playMusic();
 
 wordToGuessText.textContent = wordToGuess.join("");
 
@@ -37,6 +41,7 @@ document.onkeyup = function(event) {
         }
         if (correctLetters.join("") === word){
             stopInput = true;
+            
             userWins++;
             userWinsText.textContent = userWins;
             setTimeout(restartGame, 2000);
@@ -65,6 +70,10 @@ document.onkeyup = function(event) {
 }
 
 userWinsText.textContent = userWins;
+
+function playMusic() {
+    playSong.play();
+}
 
 
 function restartGame (){
